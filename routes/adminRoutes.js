@@ -11,6 +11,4 @@ router.get("/:id", authenticate, authorize(["admin"]), getAdminById);
 router.put("/:id", authenticate, authorize(["admin"]), updateAdmin);
 router.delete("/:id", authenticate, authorize(["admin"]), deleteAdmin);
 
-
-
 module.exports = router;
